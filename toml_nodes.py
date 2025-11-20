@@ -1,7 +1,7 @@
 import os
 import toml
 import folder_paths
-
+# test
 # --- ここを追加 ---
 # ComfyUIの型チェックを騙して、どんな型でも接続できるようにする魔法のクラス
 class AnyType(str):
