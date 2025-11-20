@@ -1,0 +1,1170 @@
+{
+  "id": "09dfa4a2-88aa-44b3-b4ba-3f7258211abc",
+  "revision": 0,
+  "last_node_id": 27,
+  "last_link_id": 26,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "easy showAnything",
+      "pos": [
+        3406.7876056358573,
+        3181.131264481482
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "{\"User\": {\"name\": \"error?\", \"level\": 5, \"newdata\": \"GUEST5\"}, \"Add1\": {\"testKey\": \"test2\"}}"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "GetTomlValue",
+      "pos": [
+        3049.614223873448,
+        3322.487192682095
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "toml_data",
+          "type": "TOML_DATA",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string_val",
+          "type": "STRING",
+          "links": [
+            2,
+            11,
+            13
+          ]
+        },
+        {
+          "name": "int_val",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "float_val",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "raw_val",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetTomlValue",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "key": true,
+            "type_hint": true
+          }
+        }
+      },
+      "widgets_values": [
+        "User.name",
+        "STRING"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 4,
+      "type": "easy showAnything",
+      "pos": [
+        3391.839243438455,
+        3334.398731980636
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "error?"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "easy showAnything",
+      "pos": [
+        3444.560935041176,
+        3513.9213276624027
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "5"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "CreateTomlData",
+      "pos": [
+        3799.8118060643146,
+        3190.600738411315
+      ],
+      "size": [
+        273.9224609375,
+        234
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value_1",
+          "shape": 7,
+          "type": "*",
+          "link": 11
+        },
+        {
+          "name": "value_2",
+          "shape": 7,
+          "type": "*",
+          "link": 19
+        },
+        {
+          "name": "value_3",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "value_4",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "value_5",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "toml_data",
+          "type": "TOML_DATA",
+          "links": [
+            18,
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CreateTomlData",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "key_1": true,
+            "key_2": true,
+            "key_3": true,
+            "key_4": true,
+            "key_5": true
+          }
+        }
+      },
+      "widgets_values": [
+        "User.name",
+        "User.level",
+        "",
+        "",
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 17,
+      "type": "easy showAnything",
+      "pos": [
+        4185.929127413513,
+        3228.9339581578083
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "{\"User\": {\"name\": \"error?\", \"level\": 5}}"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "easy showAnything",
+      "pos": [
+        4189.686117796014,
+        3652.91922875719
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "{\"User\": {\"newdata\": \"error?5\", \"name\": \"testString1\"}, \"Add1\": {\"testKey1\": \"TestString2\"}}"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "LoadToml",
+      "pos": [
+        3042.9434111893147,
+        3187.0373441174997
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "toml_data",
+          "type": "TOML_DATA",
+          "links": [
+            1,
+            3,
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadToml",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "file_path": true
+          }
+        }
+      },
+      "widgets_values": [
+        "S:\\work\\ultra-noob\\0050_自由作品\\tmp\\test.toml"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 22,
+      "type": "String",
+      "pos": [
+        3429.808602517204,
+        4157.488097432527
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-logic",
+        "ver": "1.0.0",
+        "Node name for S&R": "String",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "value": true
+          }
+        }
+      },
+      "widgets_values": [
+        "TestString2"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "String",
+      "pos": [
+        3446.4847030117962,
+        4017.7192987052713
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-logic",
+        "ver": "1.0.0",
+        "Node name for S&R": "String",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "value": true
+          }
+        }
+      },
+      "widgets_values": [
+        "testString1"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "CreateTomlData",
+      "pos": [
+        3796.921020073991,
+        3526.9357674489306
+      ],
+      "size": [
+        273.9224609375,
+        234
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value_1",
+          "shape": 7,
+          "type": "*",
+          "link": 16
+        },
+        {
+          "name": "value_2",
+          "shape": 7,
+          "type": "*",
+          "link": 23
+        },
+        {
+          "name": "value_3",
+          "shape": 7,
+          "type": "*",
+          "link": 24
+        },
+        {
+          "name": "value_4",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "value_5",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "toml_data",
+          "type": "TOML_DATA",
+          "links": [
+            17,
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CreateTomlData",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "key_1": true,
+            "key_2": true,
+            "key_3": true,
+            "key_4": true,
+            "key_5": true
+          }
+        }
+      },
+      "widgets_values": [
+        "User.newdata",
+        "User.name",
+        "Add1.testKey1",
+        "",
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 9,
+      "type": "GetTomlValue",
+      "pos": [
+        3054.9503319455443,
+        3550.610175961337
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "toml_data",
+          "type": "TOML_DATA",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string_val",
+          "type": "STRING",
+          "links": [
+            10,
+            14
+          ]
+        },
+        {
+          "name": "int_val",
+          "type": "INT",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "float_val",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "raw_val",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetTomlValue",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "key": true,
+            "type_hint": true
+          }
+        }
+      },
+      "widgets_values": [
+        "User.level",
+        "STRING"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 25,
+      "type": "Note",
+      "pos": [
+        2776.7115495634785,
+        3379.326245135482
+      ],
+      "size": [
+        210,
+        132.75441765137566
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Enter the key name you want to retrieve from the Toml data to get its value.\n\nTo retrieve data within a section, connect them with a dot.\nExample: “User.name”"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 24,
+      "type": "Note",
+      "pos": [
+        2777.2948940159586,
+        3188.029383268383
+      ],
+      "size": [
+        140,
+        60
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Enter the full path to the Toml file to load."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 14,
+      "type": "Text Concatenate",
+      "pos": [
+        3063.045305552972,
+        3801.1305902991326
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 13
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 14
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            15,
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.1",
+        "Node name for S&R": "Text Concatenate",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "delimiter": true,
+            "clean_whitespace": true
+          }
+        }
+      },
+      "widgets_values": [
+        "",
+        "true"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "easy showAnything",
+      "pos": [
+        3435.7517168529625,
+        3801.6992527625034
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "error?5"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "MergeTomlData",
+      "pos": [
+        4214.775613235289,
+        3489.2865036756025
+      ],
+      "size": [
+        183.09375,
+        46
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "toml_data_A",
+          "shape": 7,
+          "type": "TOML_DATA",
+          "link": 20
+        },
+        {
+          "name": "toml_data_B",
+          "shape": 7,
+          "type": "TOML_DATA",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "merged_data",
+          "type": "TOML_DATA",
+          "links": [
+            22,
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MergeTomlData",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 21,
+      "type": "SaveToml",
+      "pos": [
+        4483.168157734787,
+        3685.297196623647
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "toml_data",
+          "type": "TOML_DATA",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "saved_path",
+          "type": "STRING",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveToml",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "overwrite": true
+          }
+        }
+      },
+      "widgets_values": [
+        "",
+        true
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 19,
+      "type": "easy showAnything",
+      "pos": [
+        4470.495219883809,
+        3308.256217582349
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "{\"User\": {\"name\": \"testString1\", \"level\": 5, \"newdata\": \"error?5\"}, \"Add1\": {\"testKey1\": \"TestString2\"}}"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "Note",
+      "pos": [
+        4484.708200153299,
+        3471.3171543884846
+      ],
+      "size": [
+        245.55318501715146,
+        161.7834284093965
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Save Toml data to a file.\nPlease enter the full path."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 23,
+      "type": "easy showAnything",
+      "pos": [
+        4836.4850556039055,
+        3687.022600294487
+      ],
+      "size": [
+        379.9364361121907,
+        88
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.2",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "S:\\work\\ultra-noob\\0050_自由作品\\tmp\\"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "Note",
+      "pos": [
+        3804.9217673650846,
+        2951.7453774298715
+      ],
+      "size": [
+        245.55318501715146,
+        161.7834284093965
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Combine keys and values to create TOML data.\n\nIf there are six or more keys, use multiple “Create TOML Data” nodes and merge them with the “Merge TOML Data” node.\n\nIf duplicate values exist, the latter will overwrite the former."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      3,
+      0,
+      "TOML_DATA"
+    ],
+    [
+      2,
+      3,
+      0,
+      4,
+      0,
+      "*"
+    ],
+    [
+      3,
+      1,
+      0,
+      5,
+      0,
+      "*"
+    ],
+    [
+      9,
+      1,
+      0,
+      9,
+      0,
+      "TOML_DATA"
+    ],
+    [
+      10,
+      9,
+      0,
+      10,
+      0,
+      "*"
+    ],
+    [
+      11,
+      3,
+      0,
+      11,
+      0,
+      "*"
+    ],
+    [
+      13,
+      3,
+      0,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      9,
+      0,
+      14,
+      1,
+      "STRING"
+    ],
+    [
+      15,
+      14,
+      0,
+      15,
+      0,
+      "*"
+    ],
+    [
+      16,
+      14,
+      0,
+      12,
+      0,
+      "*"
+    ],
+    [
+      17,
+      12,
+      0,
+      16,
+      0,
+      "*"
+    ],
+    [
+      18,
+      11,
+      0,
+      17,
+      0,
+      "*"
+    ],
+    [
+      19,
+      9,
+      1,
+      11,
+      1,
+      "*"
+    ],
+    [
+      20,
+      11,
+      0,
+      18,
+      0,
+      "TOML_DATA"
+    ],
+    [
+      21,
+      12,
+      0,
+      18,
+      1,
+      "TOML_DATA"
+    ],
+    [
+      22,
+      18,
+      0,
+      19,
+      0,
+      "*"
+    ],
+    [
+      23,
+      20,
+      0,
+      12,
+      1,
+      "*"
+    ],
+    [
+      24,
+      22,
+      0,
+      12,
+      2,
+      "*"
+    ],
+    [
+      25,
+      18,
+      0,
+      21,
+      0,
+      "TOML_DATA"
+    ],
+    [
+      26,
+      21,
+      0,
+      23,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 1.5535220464768982,
+      "offset": [
+        -3345.1790956638006,
+        -2803.9837211696013
+      ]
+    },
+    "frontendVersion": "1.32.5",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
