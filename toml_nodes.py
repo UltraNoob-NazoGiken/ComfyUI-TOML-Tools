@@ -1,6 +1,7 @@
 import os
 import toml
 import folder_paths
+import random
 # test
 # --- ここを追加 ---
 # ComfyUIの型チェックを騙して、どんな型でも接続できるようにする魔法のクラス
@@ -18,11 +19,13 @@ class LoadTomlNode:
     """
     1. TOMLファイルを読み込むノード
     """
+
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
                 "file_path": ("STRING", {"default": "config.toml", "multiline": False}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             }
         }
 
@@ -30,8 +33,11 @@ class LoadTomlNode:
     RETURN_NAMES = ("toml_data",)
     FUNCTION = "load_toml"
     CATEGORY = "TOML Tools"
+    
 
-    def load_toml(self, file_path):
+    @classmethod
+    def load_toml(self, file_path, seed=0):
+        random.seed(seed)
         if not os.path.exists(file_path):
             print(f"File not found: {file_path}")
             return ({},)
@@ -42,7 +48,6 @@ class LoadTomlNode:
         except Exception as e:
             print(f"Error loading TOML: {e}")
             return ({},)
-
 
 class GetTomlValueNode:
     """
